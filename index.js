@@ -35,6 +35,7 @@ client.registry
 
 process.on('unhandledRejection', console.error);
 process.on('SIGINT', function() {
+	//Destroy the client
 	client.destroy();
 	process.exit(0);
 });
