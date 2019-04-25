@@ -1,0 +1,55 @@
+---
+token:
+  bot: null
+  captcha: null
+  support: null
+  music: null
+  canary: null
+  
+prefix: "."
+
+activity:
+  type: null
+  url: null
+  time: 5000
+  bot:
+  - Created by FellGill
+  - "((prefix))help | ((cmd_lenght)) commands"
+  - Version ((bot_version))
+  captcha:
+  - Check users
+  - Replace Google Captcha
+  support:
+  - I'm waiting for your problem!
+  - I'm waiting for your proposals!
+  music:
+  - "((prefix))help"
+  - Connected to Youtube !
+  canary:
+  - I'm a test !
+
+properties:
+  main_guild: null
+  owner: null
+  devs:
+  - id 1
+  - id 2
+  bot:
+    private: false
+    test: false
+  captcha:
+    private: true
+  support:
+    private: true
+  music:
+    private: true
+  canary:
+    private: true
+
+db:
+  url: null
+  user: null
+  password: null
+
+api:
+  youtube: null
