@@ -34,5 +34,9 @@ client.registry
 	.registerCommandsIn(path.join(__dirname, 'commands'));
 
 process.on('unhandledRejection', console.error);
+process.on('SIGINT', function() {
+	client.destroy();
+	process.exit(0);
+});
 
 client.login(config.bot.token);
