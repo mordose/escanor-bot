@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
-const { shards } = require('./configs/app.json');
+const config = require('./configs/app.json');
 
 const Manager = new Discord.ShardingManager('./index.js');
 
-Manager.spawn(shards);
+Manager.spawn(config.bot.shards);
 
 /*** Logs ***/
 Manager.on('launch', shard => {

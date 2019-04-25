@@ -9,9 +9,8 @@
     ],
     "delete_cmd_messages": true,
     "default_cmd_prefix": ".",
-    "activity_text": "use .help command"
+    "shards": number of shards
   },
-  "shards": number of shards, 
   "youtube": {
     "token": "Secret token",
     "base_url": "https://www.youtube.com"

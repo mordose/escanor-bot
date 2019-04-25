@@ -20,12 +20,12 @@
     "start:dev:noshard": "npx nodemon index.js",
     "start": "node shard.js",
     "start:noshard": "node index.js",
-
     "test": "npx eslint ./",
     "eslint:fix": "npx eslint ./ --fix"
   },
   "dependencies": {
     "@mindaugaskasp/node-youtube": "^1.0.1",
+    "ansi-colors": "^3.2.4",
     "crypto": "^1.0.1",
     "discord.js": "^11.4.2",
     "discord.js-commando": "^0.10.0",
