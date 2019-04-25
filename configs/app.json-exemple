@@ -1,0 +1,18 @@
+{
+  "bot": {
+    "name": "The exactly name of the bot",
+    "token": "Secret token",
+    "owners": [
+      "first id",
+      "second id",
+      "..."
+    ],
+    "delete_cmd_messages": true,
+    "default_cmd_prefix": ".",
+    "activity_text": "use .help command"
+  },
+  "youtube": {
+    "token": "Secret token",
+    "base_url": "https://www.youtube.com"
+  }
+}
