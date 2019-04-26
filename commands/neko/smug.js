@@ -8,15 +8,19 @@ const neko = new nekoClient();
 
 module.exports = class SmugCommand extends Command {
 	constructor(client) {
-			super(client, {
-					name: 'smug',
-					aliases: [],
-					group: 'neko',
-					memberName: 'smug',
-					description: 'Gets a URL of a smug image/gif',
-					examples: ['smug'],
-					guildOnly: false
-			});
+		super(client, {
+			name: 'smug',
+			aliases: [],
+			group: 'neko',
+			memberName: 'smug',
+			description: 'Gets a URL of a smug image/gif',
+			examples: ['smug'],
+			guildOnly: false,
+			throttling: {
+				usages: 1,
+				duration: 15
+			}
+		});
 	}
 
 	/**

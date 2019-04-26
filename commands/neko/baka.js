@@ -15,7 +15,11 @@ module.exports = class BakaCommand extends Command {
             memberName: 'baka',
             description: 'Gets a URL of a baka image/gif',
             examples: ['baka'],
-            guildOnly: false
+            guildOnly: false,
+			throttling: {
+				usages: 1,
+				duration: 15
+			}
         });
     }
 

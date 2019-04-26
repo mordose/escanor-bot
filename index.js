@@ -30,7 +30,7 @@ client.registry
 		['info', 'Get infos'],
 		['music', 'Music playback commands'],
 		['neko', 'Fun neko commands'],
-		['util', 'Utility']
+		['utils', 'Utility commands']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()

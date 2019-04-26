@@ -10,7 +10,11 @@ module.exports = class FactCommand extends Command {
 			memberName: 'fact',
 			description: 'Gets a random fact',
 			examples: ['fact'],
-			guildOnly: false
+			guildOnly: false,
+			throttling: {
+				usages: 1,
+				duration: 5
+			}
 		});
 	}
 

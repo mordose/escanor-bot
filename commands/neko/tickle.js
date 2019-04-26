@@ -15,7 +15,11 @@ module.exports = class TickleCommand extends Command {
             memberName: 'tickle',
             description: 'Gets a URL of a tickle image/gif',
             examples: ['tickle'],
-            guildOnly: false
+            guildOnly: false,
+            throttling: {
+                usages: 1,
+                duration: 15
+            }
         });
     }
 

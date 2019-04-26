@@ -10,7 +10,11 @@ module.exports = class WhyCommand extends Command {
 			memberName: 'why',
 			description: 'Gets a question',
 			examples: ['why'],
-			guildOnly: false
+			guildOnly: false,
+			throttling: {
+				usages: 1,
+				duration: 5
+			}
 		});
 	}
 
