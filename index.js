@@ -26,9 +26,11 @@ new EventLoaderService(client).load();
 client.registry
 	.registerDefaultTypes()
 	.registerGroups([
+		['fun', 'Funny commands'],
 		['info', 'Get infos'],
 		['music', 'Music playback commands'],
-		['neko', 'Fun neko commands']
+		['neko', 'Fun neko commands'],
+		['util', 'Utility']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
