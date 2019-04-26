@@ -31,19 +31,19 @@ module.exports = class SmugCommand extends Command {
 	 * @returns {Promise<Message|Message[]>}
 	 */
 	run(msg, args, fromPattern) {
-			try {
-					neko.sfw.smug().then((smug) => msg.say({
-							embed: {
-									"description": "Smug for you !",
-									"color": 10592930,
-									"image": {
-											"url": smug.url
-									}
-							}
-					}));
-			} catch (e) {
-					console.log(e);
-					return msg.say('Something went horribly wrong! Please try again later.');
-			}
+		try {
+			neko.sfw.smug().then(smug => msg.say({
+				embed: {
+					description: 'Smug for you !',
+					color: 10592930,
+					image: {
+						url: smug.url
+					}
+				}
+			}));
+		} catch (e) {
+			console.log(e);
+			return msg.say('Something went horribly wrong! Please try again later.');
+		}
 	}
 };

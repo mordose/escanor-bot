@@ -28,6 +28,7 @@ client.registry
 	.registerGroups([
 		['fun', 'Funny commands'],
 		['info', 'Get infos'],
+		['moderation', 'Moderation commands'],
 		['music', 'Music playback commands'],
 		['neko', 'Fun neko commands'],
 		['utils', 'Utility commands']
@@ -38,8 +39,8 @@ client.registry
 	.registerCommandsIn(path.join(__dirname, 'commands'));
 
 process.on('unhandledRejection', console.error);
-process.on('SIGINT', function() {
-	//Destroy the client
+process.on('SIGINT', () => {
+	// Destroy the client
 	client.destroy();
 	process.exit(0);
 });

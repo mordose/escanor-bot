@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { text } = require('../../assets/why')
+const { text } = require('../../assets/why');
 
 module.exports = class WhyCommand extends Command {
 	constructor(client) {
@@ -18,7 +18,7 @@ module.exports = class WhyCommand extends Command {
 		});
 	}
 
- /**
+	/**
   *
   * @param msg
   * @param args
@@ -26,8 +26,8 @@ module.exports = class WhyCommand extends Command {
   * @returns {Promise<Message|Message[]>}
   */
 	run(msg, args, fromPattern) {
-        try {
-			return msg.say(text[Math.floor(Math.random() * text.length)])
+		try {
+			return msg.say(text[Math.floor(Math.random() * text.length)]);
 		} catch (e) {
 			console.log(e);
 			return msg.say('Something went horribly wrong! Please try again later.');
