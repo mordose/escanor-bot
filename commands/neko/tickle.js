@@ -4,15 +4,15 @@ const { Command } = require('discord.js-commando');
 const nekoClient = require('nekos.life');
 const neko = new nekoClient();
 
-module.exports = class SmugCommand extends Command {
+module.exports = class TickleCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'smug',
+			name: 'tickle',
 			aliases: [],
 			group: 'neko',
-			memberName: 'smug',
-			description: 'Gets a URL of a smug image/gif',
-			examples: ['smug'],
+			memberName: 'tickle',
+			description: 'Gets a URL of a tickle image/gif',
+			examples: ['tickle'],
 			guildOnly: false
 		});
 	}
@@ -21,16 +21,16 @@ module.exports = class SmugCommand extends Command {
   *
   * @param msg
   * @param args
-	* @param fromPattern
+  * @param fromPattern
   * @returns {Promise<Message|Message[]>}
   */
 	run(msg, args, fromPattern) {
         try {
-						neko.sfw.smug().then((smug) => msg.say({embed: {
-              "description": "Smug for you !",
+			neko.sfw.tickle().then((tickle) => msg.say({embed: {
+              "description": "Tickle for you !",
               "color": 10592930,
               "image": {
-                "url": smug.url
+                "url": tickle.url
               }
             }}));
 		} catch (e) {
