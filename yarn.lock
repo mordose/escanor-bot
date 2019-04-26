@@ -2422,7 +2422,7 @@ request-promise@^4.2.4:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.87.0:
+request@^2.34, request@^2.87.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -2575,9 +2575,10 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
-"sherlockjs@github:neilgupta/Sherlock":
+sherlockjs@^1.4.0:
   version "1.4.0"
-  resolved "https://codeload.github.com/neilgupta/Sherlock/tar.gz/ac7ae1afcded14fa53e68fbde93737994d990270"
+  resolved "https://registry.yarnpkg.com/sherlockjs/-/sherlockjs-1.4.0.tgz#57dcba75dd95b9e8243b67a6ee3e13629ac4b566"
+  integrity sha512-+IkG0zu/vrwjUcdp4iNTM000U6bgFzX0yqakrO+PrQOLl1nbbZ46361DBMwpG1TW+VLjuYZhvVn67e+AgtLLRg==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"

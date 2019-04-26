@@ -1,16 +1,16 @@
 const { Command } = require('discord.js-commando');
 const moment = require('moment');
-const sherlock = require('sherlock');
+const sherlock = require('sherlockjs');
 const { stripIndents } = require('common-tags');
 
-const Util = require('../../util/util');
+const Util = require('../../utils/util');
 
 module.exports = class RemindMeCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'remindme',
-			aliases: ['remind'],
-			group: 'util',
+			aliases: ['remind', 'rmd'],
+			group: 'utils',
 			memberName: 'remindme',
 			description: 'Reminds you of something.',
 			guildOnly: true,
