@@ -14,5 +14,9 @@
   "youtube": {
     "token": "Secret token",
     "base_url": "https://www.youtube.com"
+  },
+  "weather": {
+      "google_token": "",
+      "weather_token": ""
   }
 }
